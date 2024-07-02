@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="0dp"
+        android:background="#E6F0F8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="35dp"
+                android:layout_marginStart="25dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_production_quantity_limits_24" />
+
+            <TextView
+                android:id="@+id/logotext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/logo"
+                android:text="E-CommerceApp"
+                android:textColor="#369EF1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#FEFEFE"
+        app:tabIndicatorHeight="3.5dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#369EF1"
+        app:tabTextColor="#274B67">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Computer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Computer">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tv">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/EarPhones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EarPhones">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Tablet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tablet">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/Charger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charger">
+
+        </com.google.android.material.tabs.TabItem>
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include"
+        android:layout_marginTop="0dp"
+        android:id="@+id/fragment_container">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</RelativeLayout>
